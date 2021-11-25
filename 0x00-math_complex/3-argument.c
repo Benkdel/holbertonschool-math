@@ -8,8 +8,8 @@
  */
 double argument(complex c)
 {
-        if (c.re != 0)
-                return (atan(c.im / c.re));
-        else
-                return (0);
+	if (c.re != 0)
+		return (atan(c.im / c.re));
+	else
+		return (0);
 }

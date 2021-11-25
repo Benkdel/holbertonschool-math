@@ -6,7 +6,7 @@
 #include <math.h>
 
 /**
- * complex - struct for complex numbers
+ * struct complex - struct for complex numbers
  * @re: real part of conjugate number
  * @im: imaginarty part of conjugate number
  */
