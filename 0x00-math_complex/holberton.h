@@ -26,5 +26,4 @@ void multiplication(complex c1, complex c2, complex *c3);
 void division(complex c1, complex c2, complex *c3);
 void complex_from_mod_arg(double m, double arg, complex *c3);
 
-
 #endif
