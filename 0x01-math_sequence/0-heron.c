@@ -7,13 +7,13 @@
  * @x0: The initial value of the Heron sequence
  * Return: single linked list;
  */
-t_cell *heron(double p, double x0)
+struct t_cell *heron(double p, double x0)
 {
 	double fx = 0, _error = 0;
 
-	t_cell *head = NULL, *new = NULL, *tail;
+	struct t_cell *head = NULL, *new = NULL, *tail;
 
-	new = malloc(sizeof(head));
+	new = malloc(sizeof(struct t_cell));
 	if (!new)
 		return (NULL);
 

@@ -10,13 +10,13 @@
  * @elt: number
  * @next: pointer
  */
-typedef struct Fibo
+struct Fibo
 {
 	int elt;
 	struct Fibo *next;
-} t_cell;
+};
 
-double gold_number(t_cell *head);
-t_cell *Fibonnaci();
+double gold_number(struct Fibo *head);
+struct Fibo *Fibonnaci();
 
 #endif

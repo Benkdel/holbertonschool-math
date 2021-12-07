@@ -1,3 +1,5 @@
+#ifndef HERON_H
+#define HERON_H
 
 #include <stdio.h>
 #include <math.h>
@@ -8,12 +10,13 @@
  * @elt: double number
  * @next: pointer
  */
-
-typedef struct Heron
+struct t_cell
 {
 	double elt;
-	struct Heron *next;
-} t_cell;
+	struct t_cell *next;
+};
 
-t_cell *heron(double p, double x0);
+struct t_cell *heron(double p, double x0);
+
+#endif
 
