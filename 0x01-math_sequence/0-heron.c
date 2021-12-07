@@ -5,7 +5,6 @@
  * having convergence with an error less or equal to 10^-7
  * @p: The number to find its approximate square root
  * @x0: The initial value of the Heron sequence
- *
  * Return: single linked list;
  */
 t_cell *heron(double p, double x0)
@@ -14,7 +13,7 @@ t_cell *heron(double p, double x0)
 
 	t_cell *head = NULL, *new = NULL, *tail;
 
-	new = malloc(sizeof(t_cell));
+	new = malloc(sizeof(head));
 	if (!new)
 		return (NULL);
 
@@ -30,4 +29,4 @@ t_cell *heron(double p, double x0)
 
 	fx = (0.5) * (x0 + (p / x0));
 	head = heron(p, fx);
-	
+}

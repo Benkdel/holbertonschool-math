@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+
 /**
  * struct Heron - struct
  * @elt: double number
@@ -19,3 +20,4 @@ typedef struct Heron
 t_cell *heron(double p, double x0);
 
 #endif
+
