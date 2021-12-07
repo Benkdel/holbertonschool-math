@@ -29,4 +29,10 @@ t_cell *heron(double p, double x0)
 
 	fx = (0.5) * (x0 + (p / x0));
 	head = heron(p, fx);
+	tail = head;
+	while (tail->next)
+		tail = tail->next;
+	tail->next = new;
+
+	return (head);
 }

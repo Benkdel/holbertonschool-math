@@ -1,4 +1,5 @@
 #include "fibonacci.h"
+
 /**
  * gold_number - nummber
  * @head: linked list

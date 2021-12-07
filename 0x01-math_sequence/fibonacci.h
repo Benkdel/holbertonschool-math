@@ -1,5 +1,5 @@
-#ifndef FIBO_H
-#define FIBO_H
+#ifndef FIBONACCI_H
+#define FIBONACCI_H
 
 #include <stdlib.h>
 #include <math.h>
