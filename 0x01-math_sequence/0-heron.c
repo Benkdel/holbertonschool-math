@@ -1,19 +1,19 @@
 #include "heron.h"
-
 /**
  * heron - function that return the Heron sequence until
  * having convergence with an error less or equal to 10^-7
  * @p: The number to find its approximate square root
  * @x0: The initial value of the Heron sequence
+ *
  * Return: single linked list;
  */
-struct t_cell *heron(double p, double x0)
+t_cell *heron(double p, double x0)
 {
 	double fx = 0, _error = 0;
 
-	struct t_cell *head = NULL, *new = NULL, *tail;
+	t_cell *head = NULL, *new = NULL, *tail;
 
-	new = malloc(sizeof(struct t_cell));
+	new = malloc(sizeof(t_cell));
 	if (!new)
 		return (NULL);
 

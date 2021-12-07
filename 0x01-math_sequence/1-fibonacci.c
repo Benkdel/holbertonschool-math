@@ -2,9 +2,10 @@
 /**
  * gold_number - nummber
  * @head: linked list
+ *
  * Return: gold number
  */
-double gold_number(struct Fibo *head)
+double gold_number(t_cell *head)
 {
 	double f_c, f_b;
 
@@ -15,18 +16,19 @@ double gold_number(struct Fibo *head)
 }
 /**
  * Fibonnaci - Fibonacci sequence until having a geometric behavior
+ *
  * Return: linked list
  */
-struct Fibo *Fibonnaci()
+t_cell *Fibonnaci()
 {
-	struct Fibo *head = NULL, *new;
+	t_cell *head = NULL, *new;
 	int f_a = 0, f_c = 1, f_b = 0, lim = 20;
 
 	while (lim)
 	{
 		f_a = f_c + f_b;
 
-		new = malloc(sizeof(struct Fibo));
+		new = malloc(sizeof(t_cell));
 		new->elt = f_c;
 		new->next = head;
 		head = new;

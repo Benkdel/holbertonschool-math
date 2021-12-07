@@ -4,19 +4,18 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-
 /**
  * struct Heron - struct
  * @elt: double number
  * @next: pointer
  */
-struct t_cell
+
+typedef struct Heron
 {
 	double elt;
-	struct t_cell *next;
-};
+	struct Heron *next;
+} t_cell;
 
-struct t_cell *heron(double p, double x0);
+t_cell *heron(double p, double x0);
 
 #endif
-
