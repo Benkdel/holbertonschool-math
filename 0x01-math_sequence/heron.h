@@ -1,24 +1,21 @@
-#ifndef HERO_H
-#define HERO_H
+#ifndef HERON_H
+#define HERON_H
 
-/* macros */
-
-#define alloc(t) (t *)malloc(sizeof(t))
-
-/* includes */
-
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
 /**
- * t_cell - struct of cells for hero iteration
- * 
+ * struct Heron - struct
+ * @elt: double number
+ * @next: pointer
  */
-typedef struct t_cell
+
+typedef struct Heron
 {
 	double elt;
-	double u0;
-	t_cell *next;
+	struct Heron *next;
 } t_cell;
 
-/* prototypes */
 t_cell *heron(double p, double x0);
 
 #endif

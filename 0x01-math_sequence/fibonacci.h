@@ -1,21 +1,22 @@
-#ifndef HERON_H_
-#define HERON_H_
+#ifndef FIBO_H
+#define FIBO_H
+
+#include <stdlib.h>
+#include <math.h>
+#include <stdio.h>
 
 /**
- * t_cell - structure
- * 
+ * struct Fibo - struct
+ * @elt: number
+ * @next: pointer
  */
-typedef struct t_cell
+typedef struct Fibo
 {
-        int elt;
-        struct t_cell *next;
+	int elt;
+	struct Fibo *next;
 } t_cell;
 
-t_cell *Init_cell(double elt, t_cell *succ);
-void PrintList(t_cell *first);
-int listLength(t_cell *first);
-void FreeList(t_cell *first);
-t_cell *Fibonnaci();
 double gold_number(t_cell *head);
+t_cell *Fibonnaci();
 
 #endif
